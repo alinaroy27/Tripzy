@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripzy</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ripzy</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+
+    <div class="login-form-container">
+        <i class="fas fa-time" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">Click here</a></p>
+            <p>don't have an account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventures are worthwhile</h3>
+            <p>Discover new places with us, adventure awaits!</p>
+            <a href="#" class="btn">Discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="vid1.mp4"></span>
+            <span class="vid-btn" data-src="vid2.mp4"></span>
+            <span class="vid-btn" data-src="vid3.mp4"></span>
+            <span class="vid-btn" data-src="vid4.mp4"></span>
+            <span class="vid-btn" data-src="vid5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="vid1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="img1.jpg" alt="" height="700" width="800">
+            </div>
+            <div class="form-container">
+                <form action="">
+                    <div class="inputBox">
+                        <h3>Where to</h3>
+                        <input type="text" placeholder="place name">
+                    </div>
+                    <div class="inputBox">
+                        <h3>How many guests</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Arrivals</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Departures</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="btn" value="Book Now">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://www.tripsavvy.com/thmb/V6JxfYqOrA268Li6fra_jSlkcCA=/2121x1414/filters:fill(auto,1)/OperaHouse-755d893182dc4811b608eb1a99792fd7.jpg"
+                    height="250" width="400">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Sydney</h3>
+                    <p>Sydney city tour with iconic Opera House, Harbour Bridge, Bondi Beach, Manly Beach & more.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$250.00 <span> $500.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://d12a3lcl7jb9h2.cloudfront.net/assets/DERTOUR/blt5163017593cbd38e/635267d259a67d10a424d9fc/thailand-bangkok-wat-arun-tempel-bei-sonnenuntergang-g-488691871.jpg"
+                    height="250" width="400">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Bangkok</h3>
+                    <p>Dazzling Bangkok city tour with Wat Arun Temple, National Museum, Chatuchak & more.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$200.00 <span> $300.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.NomeAH0aZIMdTBrKAvQ7IQHaEK&pid=Api&P=0&h=180"
+                    height="250" width="400">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Egypt</h3>
+                    <p>Explore the city of Alexandria, Cairo along with the iconic Giza Pyramids , Nile river cruise &
+                        much more.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$500.00 <span> $800.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2011/05/maldives-1200x853.jpg" height="250"
+                    width="400">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Maldives</h3>
+                    <p>Ultimate Maldives Escape with stay in an overwater Bunglow with private pool along with Male city
+                        tour.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$400.00 <span> $600.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img3.jpg"
+                    height="250" width="400">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Mumbai</h3>
+                    <p>Mumbai darshan with gateway of india, elephanta caves, juhu beach , essel world & much more.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$150.00 <span> $300.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://www.discoverwalks.com/blog/wp-content/uploads/2019/11/photo-1543349689-9a4d426bee8e-2048x1483.jpg"
+                    height="250" width="400">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Paris</h3>
+                    <p>Experience the romance of paris with the iconic eiffel tower, palace of versailles, romantic
+                        seine river cruise & more.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$400.00 <span> $800.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Affordable Hotels</h3>
+                <p>Find budget-friendly stays without compromising on comfort. We partner with top-rated hotels to bring you the best deals, ensuring a relaxing stay wherever you go.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food and Drinks</h3>
+                <p>Experience local flavors like never before! From street food delights to fine dining, we guide you to the best culinary experiences that make your journey unforgettable.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safety Guide</h3>
+                <p>Your safety is our priority! Get expert travel tips, emergency contacts, and up-to-date information to ensure a secure and worry-free trip.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Around the world</h3>
+                <p>Discover breathtaking destinations across the globe! Whether it's tropical beaches, historic landmarks, or hidden gems, we make traveling the world easy and exciting.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventures</h3>
+                <p>Thrill-seekers, rejoice! Whether it's hiking, scuba diving, or extreme sports, we offer the best adventure packages to fuel your wanderlust.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://www.agoda.com/wp-content/uploads/2020/03/Burj-Khalifa-Dubai-attractions-UAE-United-Arab-Emirates.jpg"
+                    alt="" height="400" width="580">
+                <div class="content">
+                    <h3>Arabian Oasis</h3>
+                    <p>Dubai Escapade: 6 Days / 5 Nights of Luxury, Culture, Food and adventure in the city of Gold!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2015/08/25/07/bigben.jpg" alt=""
+                    height="400" width="580">
+                <div class="content">
+                    <h3>London Calling</h3>
+                    <p>Discover London: 7 Days/6 Nights of History, Royalty, and Iconic Landmarks in England's Vibrant
+                        Capital!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://www.webuildvalue.com/wp-content/uploads/2020/10/Taj-Mahal.jpeg" alt="" height="400"
+                    width="580">
+                <div class="content">
+                    <h3>Colours of India</h3>
+                    <p>Experience India: 10 Days/9 Nights of Culture, History, and Spirituality in Incredible India's
+                        Vibrant Cities!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://onelifeadventures.com/wp-content/uploads/2021/10/bali_gates.jpg" alt="" height="400"
+                    width="600">
+                <div class="content">
+                    <h3>Bali Bliss</h3>
+                    <p>Bali Uncovered: 10 Days/9 Nights of Adventure, Nature, and Spirituality in the Island of the
+                        Gods!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://images.squarespace-cdn.com/content/v1/63b42d68124e4755513cecb9/5b4bf815-cc26-44b4-89b5-ec2e03308c9a/venice-gondola.jpg"
+                    alt="" height="400" width="580">
+                <div class="content">
+                    <h3>Venice Escapades</h3>
+                    <p>Venice Getaway: 5 Days/4 Nights of Canals, Palaces, and Romance in Italy's Floating City!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://heymondo.com/blog/wp-content/uploads/2021/08/what-to-see-in-new-york.jpg" alt=""
+                    height="400" width="580">
+                <div class="content">
+                    <h3>Empire City</h3>
+                    <p>New York Unplugged: 10 Days/9 Nights of Music, Art, and Nightlife in the City's Hidden Gems!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://www.liveabout.com/thmb/EKnmgoAr_X4TrIpxBiPYu9lao9U=/2000x1333/filters:fill(auto,1)/GettyImages-468963673-5ad40ad2fa6bcc0036add08a.jpg"
+                    alt="" height="400" width="580">
+                <div class="content">
+                    <h3>Swiss Serenity</h3>
+                    <p>Experience Switzerland: 8 Days/7 Nights of Mountains, Lakes, and Chocolate in the Heart of
+                        Europe!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://pm1.narvii.com/6314/136e1b7eb5e5036dae1b00af3333ca71aec12651_hq.jpg" alt=""
+                    height="400" width="580">
+                <div class="content">
+                    <h3>K-Pop Capital</h3>
+                    <p>Seoul Getaway: 4 Days/3 Nights of Relaxation, Spas, and Traditional Markets in the K-Pop Capital!
+                    </p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://bkkfoodie.com/wp-content/uploads/2020/08/8a00a6e3-e4e9-46ba-9a82-36154eaf29ea.jpg"
+                    alt="" height="400" width="580">
+                <div class="content">
+                    <h3>Phuket Paradise</h3>
+                    <p>"Experience Phuket: 6 Days/5 Nights of Beaches, Islands, and Water Sports in Thailand's Tropical
+                        Paradise!</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://cdn.acidcow.com/pics/20130919/random_cute_girls_50.jpg" alt="">
+                        <h3>Emily R.</h3>
+                        <p>Tripzy made my dream vacation a reality! From hassle-free bookings to incredible recommendations, everything was seamless. Can't wait to plan my next trip with them! Their 24/7 support was also a huge plus!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.rFQyRuKghsBDKgQzpMdI0QHaE8&pid=Api&P=0&h=180" alt="">
+                        <h3>Henry V.</h3>
+                        <p>Tripzy made my dream vacation come true! Everything was perfectly organized, and I didn't have to worry about a thing. I felt like a VIP traveler from start to finish. Thank You Tripzy. Looking forward for many more vacations!!!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.CBmnbO4f1mmbJA2i43WasAHaHa&pid=Api&P=0&h=180" alt="">
+                        <h3>Olivia L.</h3>
+                        <p>I was skeptical at first, but Tripzy exceeded my expectations. The itinerary was well-planned, the accommodations were amazing, and the whole trip was stress-free! I'll definitely be booking again soon!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.bLnnDC8ZDmyikEiSD9HhYwHaHa&pid=Api&P=0&h=180" alt="">
+                        <h3>Miguel C.</h3>
+                        <p>I’ve used many travel agencies before, but none compare to Tripzy! Their attention to detail and personalized service made my vacation unforgettable. They even surprised me with a complimentary tour!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.UsuQrCY9MvPLUhVBGBQr9gHaE8&pid=Api&P=0&h=180" alt="">
+                        <h3>Chase J.</h3>
+                        <p>I booked my honeymoon through Tripzy, and it was pure magic! Every little detail was perfect, from the romantic dinners to the surprise room upgrades. They truly know how to make travel special!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.Cq9NyAKK3SFpwJhBrNI8cQHaHD&pid=Api&P=0&h=180" alt="">
+                        <h3>Francesca F.</h3>
+                        <p>I wanted a luxury getaway, and Tripzy delivered beyond my expectations! The resort was breathtaking, and every part of the trip felt exclusive and well-planned. Can’t wait to book again!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="pic">
+                <img src="img2.jpg" alt="" >
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea placeholder="Message Us" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+
+            </form>
+        </div>
+
+
+    </section>
+
+    <section class="brand-container">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper brands">
+                <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.VT_SdQCioREkYtrRyZ2TxQHaHa&pid=Api&P=0&h=180" alt="" height="120" width="120"></div>
+                <div class="swiper-slide"><img src="https://logos-world.net/wp-content/uploads/2020/03/Qatar-Airways-Emblem.png" alt="" height="130" width="130"></div>
+                <div class="swiper-slide"><img src="https://tse1.mm.bing.net/th?id=OIP.c3JAVjmAAzx9K4t0_3gA9wHaFg&pid=Api&P=0&h=180" alt="" height="170" width="170"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/originals/14/91/a7/1491a7241ecf5a922ff224a5af6d5dde.jpg" alt="" height="130" width="130"></div>
+                <div class="swiper-slide"><img src="https://tse1.mm.bing.net/th?id=OIP.rhCGeFCwYz0z61ka-1Cx6gHaFj&pid=Api&P=0&h=180" alt="" height="150" width="150"></div>
+                <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th?id=OIP.mHOqwQTypXrlup8-mmQ2FwHaFj&pid=Api&P=0&h=180" alt="" height="130" width="130"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/64/7c/10/647c1084494f8146ab5d5522a8c5d747.jpg" alt="" height="140" width="140"></div>
+                <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th?id=OIP.M4ZaxlPM5RwcM97xL1oUQQHaGP&pid=Api&P=0&h=180" alt="" height="180" width="180"></div>
+                <div class="swiper-slide"><img src="https://static.wixstatic.com/media/9d8ed5_a3d60d721cfc4d0fac1d5b4919d1e035~mv2.jpg/v1/fill/w_1000,h_626,al_c,q_90,usm_0.66_1.00_0.01/9d8ed5_a3d60d721cfc4d0fac1d5b4919d1e035~mv2.jpg" alt="" height="170" width="170"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p>At Tripzy, we believe that every journey should be unforgettable. Whether you're looking for a relaxing getaway, an adrenaline-pumping adventure, or a cultural exploration, we make travel easy, affordable, and stress-free. Our expert team curates personalized experiences, offering the best hotels, local cuisines, safety tips, and thrilling activities worldwide.</p>
+            </div>
+
+            <div class="box">
+                <h3>Branch Locations</h3>
+                <a href="#">India</a>
+                <a href="#">Usa</a>
+                <a href="#">England</a>
+                <a href="#">Thailand</a>
+                <a href="#">France</a>
+            </div>
+            <div class="box" >
+                <h3>Quick Links</h3>
+                <a href="#">Book Now</a>
+                <a href="#">Packages</a>
+                <a href="#">Services</a>
+                <a href="#">Gallery</a>
+                <a href="#">Reviews</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <h1 class="credit">Created by <span> Alina Roy </span> | all rights reserved!</h1>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
